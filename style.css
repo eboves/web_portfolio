@@ -1,0 +1,208 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Rubik", sans-serif; */
+  line-height: 1;
+  font-weight: 400;
+  /* color: #555; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 5vw 95vw;
+  grid-template-rows: 1fr;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**************************/
+/*       NAVEGATION       */
+/**************************/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+ul {
+  list-style-type: none;
+}
+/**************************/
+/*          MAIN          */
+/**************************/
+main {
+  background-color: antiquewhite;
+}
+/**************************/
+/*        ABOUT ME        */
+/**************************/
+.about-me {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20vh 20vh;
+  justify-content: center;
+}
+
+.personal-info {
+  flex-direction: column;
+  background-color: blue;
+}
+
+.image {
+  grid-area: 2/2/3/3;
+  background-color: brown;
+}
+
+/**************************/
+/*         SKILLS        */
+/**************************/
+
+.skills {
+  background-color: aquamarine;
+  flex-direction: column;
+}
+
+.skills-logos {
+  gap: 1rem;
+}
+
+/**************************/
+/*         PROJECTS       */
+/**************************/
+.projects {
+  flex-direction: column;
+  background-color: blueviolet;
+}
+
+.personal-list {
+  flex-direction: column;
+}
+
+.project-img {
+  background-color: black;
+  height: 15rem;
+  width: 15rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.project-description {
+  width: 75ch;
+  /* position: absolute;
+  left: 72rem;
+  background-color: red; */
+}
+
+.project-tools {
+  flex-direction: column;
+}
+
+.project-tools-used {
+  display: flex;
+  gap: 1rem;
+}
+
+/**************************/
+/*       CONTACT ME       */
+/**************************/
+.contact-me {
+  flex-direction: column;
+}
+.contact-me-form {
+  background-color: black;
+  height: 15rem;
+  width: 15rem;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+/**************************/
+/*         FOOTER         */
+/**************************/
+footer {
+  grid-area: 2/1/3/3;
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+}
