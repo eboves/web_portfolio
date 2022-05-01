@@ -4,51 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/73313b4c16.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Elvis Boves</title>
   </head>
   <body>
     <div class="container">
-      <nav>
-        <ul>
-          <li>Github</li>
-          <li>Medium</li>
-          <li>YouTube</li>
-          <li>Resume</li>
+      <nav class="navegation center-items">
+        
+        <ul class="list-social-media center-items">
+          <div class="vertical"></div>
+          <li><a href="https://github.com/eboves" target"_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa-solid fa-file"></i></a></li>
+          <div class="vertical"></div>
         </ul>
+        
       </nav>
       <main>
         <section class="about-me">
           <div class="personal-info center-items">
             <h1>Elvis Boves</h1>
-            <p>Front-End Developer</p>
+            <p class="position">Front-End Developer</p>
+            <p class="personal-description">I am a self-taught Front-End Developer. Graduated as a Mechanical Engineering in Technology. Like to build minimalistic applications that makes the user experience as simple as possible.</p>
             <button>Contact Me</button>
           </div>
           <div class="image center-items">
-            <img />
-            <p>something</p>
+            <img class="coding-img" src="/imgs/coding.svg"/>
           </div>
         </section>
         <!-- about-me -->
 
         <section class="skills center-items">
-          <h2>Skills</h2>
-          <div class="logos skills-logos center-items">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>SASS</p>
-            <p>JAVASCRIPT</p>
-            <p>REACT</p>
-            <p>JAVA</p>
-            <p>SQL</p>
+          <h2>< Skills ></h2>
+          <div class="skills-logos">
+              <ul class="list-skills">
+                  <li class="n1"><i class="skill-icons fa-brands fa-html5"></i></li>
+                  <li class="e1"><i class="skill-icons fa-brands fa-css3"></i></li>
+                  <li class="s1"><i class="skill-icons fa-brands fa-js"></i></li>
+                  <li class="w1"><i class="skill-icons fa-brands fa-react"></i></li>
+                  <li class="n2"><i class="skill-icons fa-brands fa-java"></i></li>
+                  <li class="e2"><i class="skill-icons fa-brands fa-python"></i></li>
+                  <li class="s2"><i class="skill-icons fa-solid fa-database"></i></li>
+                  <li class="w2"><i class="skill-icons fa-brands fa-git-alt"></i></li>
+                  
+              </ul>
           </div>
+          <h2>< /Skills ></h2>
         </section>
         <!-- skills -->
 
         <section class="projects center-items">
-          <h2>Projects</h2>
+          <h2>< Projects ></h2>
           <div class="projects-list">
-            <div class="card project-card-left center-items">
+            <div class="project-card-left center-items">
               <img class="project-img" src="" />
               <div class="project-info">
                 <h3>Project Name</h3>
@@ -77,6 +93,7 @@
             <!-- project-card-left -->
           </div>
           <!-- project-list -->
+        <h2>< /Projects ></h2>
         </section>
         <!-- projects -->
 
