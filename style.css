@@ -215,29 +215,47 @@ h2 {
 /**************************/
 /*         PROJECTS       */
 /**************************/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 .projects {
   flex-direction: column;
   background-color: blueviolet;
 }
 
 .projects-list {
+  width: 75%;
   margin-bottom: 8.8rem;
 }
 
 .project-img {
-  background-color: black;
+  grid-area: 1/1/2/7;
+  background-color: red;
   height: 35rem;
   width: 55rem;
 }
 
+.project-content {
+  grid-area: 1/6/2/13;
+  margin-top: 4.8rem;
+}
+
+.project {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
 h3 {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
 .project-info {
-  height: 35rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -245,10 +263,9 @@ h3 {
 }
 
 .project-description {
-  width: 65ch;
-  /* position: absolute;
-  left: 72rem;
-  background-color: red; */
+  font-size: 1.8rem;
+  z-index: 9999;
+  margin-bottom: 3.2rem;
 }
 
 .project-tools {
@@ -257,6 +274,7 @@ h3 {
 
 .project-tools-used {
   display: flex;
+  flex-direction: row;
   gap: 1rem;
 }
 
