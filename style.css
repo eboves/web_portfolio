@@ -59,7 +59,8 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  /* color: #555; */
+  color: #131313;
+  background-color: #ebebeb;
 }
 
 .container {
@@ -77,12 +78,17 @@ body {
   align-items: center;
 }
 
+.padding-radius {
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: #cecece;
+}
+
 /**************************/
 /*       NAVEGATION       */
 /**************************/
 .navegation {
   font-size: 2.4rem;
-  gap: 4rem;
 }
 
 ul {
@@ -104,9 +110,7 @@ ul {
 /**************************/
 /*          MAIN          */
 /**************************/
-main {
-  background-color: antiquewhite;
-}
+
 /**************************/
 /*        ABOUT ME        */
 /**************************/
@@ -124,22 +128,43 @@ main {
 
 h1 {
   margin-top: 9.6rem;
-  font-size: 8.6rem;
-  font-weight: 700;
+  font-size: 9.8rem;
+  font-weight: 600;
   letter-spacing: -3.2px;
   margin-bottom: -0.5rem;
 }
 
 .position {
-  font-size: 3rem;
+  font-size: 3.6rem;
   margin-bottom: 3.2rem;
   font-weight: 300;
+  color: #3b3b3b;
+}
+
+.personal-desc {
+  margin: 0 0 4.8rem 3.2rem;
 }
 
 .personal-description {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.2em;
-  margin: 0 0 4.8rem 3.2rem;
+  color: #3b3b3b;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #6410ff;
+  border: 2px solid #6410ff;
+  border-radius: 9px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgba(100, 16, 255, 0.15);
 }
 
 .image {
@@ -147,8 +172,8 @@ h1 {
 }
 
 .coding-img {
-  width: 52rem;
-  height: 52rem;
+  width: 48rem;
+  height: 48rem;
 }
 
 /**************************/
@@ -157,9 +182,10 @@ h1 {
 h2 {
   width: 100%;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 8.8rem;
   margin-left: 35rem;
+  color: #6410ff;
 }
 
 .skills {
@@ -228,6 +254,7 @@ h2 {
 
 .projects {
   flex-direction: column;
+  margin-bottom: 8.8rem;
 }
 
 .projects-list {
@@ -254,6 +281,7 @@ h2 {
   font-weight: 300;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
+  color: #6410ff;
 }
 
 h3 {
@@ -273,9 +301,6 @@ h3 {
   font-size: 1.8rem;
   z-index: 9999;
   margin-bottom: 3rem;
-  padding: 2rem;
-  background-color: aqua;
-  border-radius: 5px;
 }
 
 .project-tools {
@@ -303,11 +328,13 @@ h3 {
 /**************************/
 .contact-me {
   flex-direction: column;
+  margin-bottom: 6.4rem;
 }
 .contact-me-form {
   background-color: black;
   height: 15rem;
   width: 15rem;
+  margin-bottom: 8.8rem;
 }
 
 /**************************/
@@ -321,5 +348,11 @@ footer {
   grid-area: 2/1/3/3;
   display: flex;
   justify-content: center;
-  background-color: aqua;
+  color: #8a8a8a;
+  margin-bottom: 2rem;
+}
+
+.copy-right {
+  font-size: 1.4rem;
+  font-weight: 300;
 }
