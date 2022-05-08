@@ -60,7 +60,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #131313;
-  background-color: #ebebeb;
+  /* background-color: #ebebeb; */
 }
 
 .container {
@@ -82,6 +82,13 @@ body {
   border-radius: 9px;
   padding: 2rem;
   background-color: #cecece;
+}
+
+.name-email {
+  height: 3.2rem;
+  min-width: 30rem;
+  padding-left: 1.6rem;
+  border: none;
 }
 
 /**************************/
@@ -151,8 +158,8 @@ h1 {
   color: #3b3b3b;
 }
 
-.btn:link,
-.btn:visited {
+.btn-a:link,
+.btn-a:visited {
   display: inline-block;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
@@ -160,10 +167,11 @@ h1 {
   color: #6410ff;
   border: 2px solid #6410ff;
   border-radius: 9px;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.btn:hover,
-.btn:active {
+.btn-a:hover,
+.btn-a:active {
   background-color: rgba(100, 16, 255, 0.15);
 }
 
@@ -272,7 +280,7 @@ h2 {
   grid-area: 1/1/2/7;
   background-image: url("/imgs/foto.png");
   height: 35rem;
-  width: 55rem;
+  width: 63rem;
   border-radius: 9px;
 }
 
@@ -351,10 +359,70 @@ h3 {
   margin-bottom: 6.4rem;
 }
 .contact-me-form {
-  background-color: black;
-  height: 15rem;
-  width: 15rem;
   margin-bottom: 8.8rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  grid-template-rows: 4.4rem 20rem 4.4rem;
+  column-gap: 1.6rem;
+  row-gap: 1.6rem;
+}
+
+.sender-info {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.form-name {
+  grid-area: 1/1/2/2;
+  align-self: center;
+}
+
+.form-email {
+  grid-area: 1/2/2/3;
+  align-self: center;
+}
+
+.form-message {
+  grid-area: 2/1/3/3;
+  min-width: 100%;
+}
+
+.message {
+  min-width: 61.6rem;
+  height: 19rem;
+  padding: 1rem 0 0 1.6rem;
+  border: none;
+}
+
+input .message:focus {
+  /* border: 2px solid #6410ff !important; */
+  outline: 3px solid orange;
+}
+
+.form-submit {
+  grid-area: 3/1/4/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn-submit {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.2rem 2.4rem;
+  color: #6410ff;
+  border: 2px solid #6410ff;
+  border-radius: 9px;
+  background-color: none;
+}
+
+.btn-submit:hover {
+  background-color: rgba(100, 16, 255, 0.15);
+  color: #ffffff;
 }
 
 /**************************/

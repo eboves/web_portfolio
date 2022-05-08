@@ -38,7 +38,7 @@
             <div class="personal-desc padding-radius">
               <p class="personal-description">I am a self-taught Front-End Developer. Graduated as a Mechanical Engineering in Technology. Like to build minimalistic applications that makes the user experience as simple as possible.</p>
            </div>
-            <a href="#" class="btn">Contact Me</a>
+            <a href="#" class="btn-a">Contact Me</a>
           </div>
           <div class="image center-items">
             <img class="coding-img" src="/imgs/coding.svg"/>
@@ -85,6 +85,7 @@
                             quam.
                           </p>
                         </div>
+                        <!-- project-description -->
                         <div class="project-tools center-items">
                 
                           <ul class="project-tools-used">
@@ -102,28 +103,40 @@
                       <!-- project-info -->
                 </div>
             </li>
-            <!-- <li class="right-side">
-                <div class="project-info"></div>
-                <div class="project-img"></div>
-            </li> -->
-            <!-- <li class="left-side">
-                <div class="project-img"></div>
-                <div class="project-info"></div>
-            </li>
-            <li class="right-side">
-                <div class="project-info"></div>
-                <div class="project-img"></div>
-            </li> -->
           </ul>
+          <!-- project-list -->
         <h2>< /Projects ></h2>
         </section>
         <!-- projects -->
 
         <section class="contact-me center-items">
           <h2>< Contact-Me ></h2>
-          <div class="contact-me-form">
-            <form></form>
+          <div class="contact-me-form padding-radius">
+            <form action="" method="get" class="form">
+
+                <div class="form-name">
+                  <!-- <label for="name"><span>Enter your name: </span></label> -->
+                  <input type="text" name="name" class="name name-email" placeholder="Name" required>
+                </div>
+                <!-- form-name -->
+                <div class="form-email">
+                  <!-- <label for="email">Enter your email: </label> -->
+                  <input type="email" name="email" class="email name-email" placeholder="Email" required>
+                </div>
+                <!-- sender-info -->
+              <div class="form-message">
+                <!-- <label for="message">Message</label> -->
+                <textarea name="message" class="message" placeholder="Message"></textarea>
+              </div>
+              <!-- form-message -->
+              <div class="form-submit">
+                <input type="submit" class="btn-submit" value="Contact Me">
+              </div>
+              <!-- form-submit -->
+            </form>
+            <!-- form -->
           </div>
+          <!-- contact-me-form -->
           <h2>< /Contact-Me ></h2>
         </section>
         <!-- contact-me -->
